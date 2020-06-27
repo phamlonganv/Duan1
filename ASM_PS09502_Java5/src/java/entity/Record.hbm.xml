@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 3, 2020 10:50:16 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Record" table="Record" schema="dbo" catalog="PS09502_NguyenQuocVu_Java5" optimistic-lock="version">
+        <id name="recordid" type="int">
+            <column name="recordid" />
+            <generator class="native" />
+        </id>
+        <many-to-one name="staff" class="entity.Staff" fetch="select">
+            <column name="staffid" />
+        </many-to-one>
+        <property name="type" type="java.lang.Boolean">
+            <column name="type" />
+        </property>
+        <property name="date" type="date">
+            <column name="date" length="10" />
+        </property>
+        <property name="note" type="string">
+            <column name="note" />
+        </property>
+    </class>
+</hibernate-mapping>

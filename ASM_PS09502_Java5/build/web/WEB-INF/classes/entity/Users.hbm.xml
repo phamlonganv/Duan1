@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 3, 2020 10:50:16 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="PS09502_NguyenQuocVu_Java5" name="entity.Users" optimistic-lock="version" schema="dbo" table="Users">
+    <id name="username" type="string">
+      <column length="50" name="username"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="password" type="string">
+      <column length="50" name="password"/>
+    </property>
+    <property name="fullname" type="string">
+      <column name="fullname"/>
+    </property>
+    <property name="image" type="string">
+      <column name="image"/>
+    </property>
+  </class>
+</hibernate-mapping>

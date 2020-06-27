@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ASM_PS09502_Java5]">
+  <test name="TestNGhah suite(failed)">
+    <classes>
+      <class name="TestNGhah.TestRecordInsert">
+        <methods>
+          <include name="testInsert" invocation-numbers="2 3"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- TestNGhah.TestRecordInsert -->
+      <class name="TestNGhah.TestDepartInsert">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="testInsert" invocation-numbers="1 2 3 4"/>
+        </methods>
+      </class> <!-- TestNGhah.TestDepartInsert -->
+      <class name="TestNGhah.TestStaffUpdate">
+        <methods>
+          <include name="testInsert" invocation-numbers="1 3 4 6 8 9"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- TestNGhah.TestStaffUpdate -->
+      <class name="TestNGhah.TestDepartUpdate">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="testInsert" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- TestNGhah.TestDepartUpdate -->
+      <class name="TestNGhah.TestStaffInsert">
+        <methods>
+          <include name="testInsert" invocation-numbers="1 3 4 6"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- TestNGhah.TestStaffInsert -->
+      <class name="TestNGhah.TestLogin">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="testLogin" invocation-numbers="1 2 3"/>
+        </methods>
+      </class> <!-- TestNGhah.TestLogin -->
+      <class name="TestNGhah.TestUserUpdate">
+        <methods>
+          <include name="testInsert" invocation-numbers="1"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- TestNGhah.TestUserUpdate -->
+      <class name="TestNGhah.TestUserInsert">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="testInsert" invocation-numbers="0 1 2 3 4 5 6 7 8"/>
+        </methods>
+      </class> <!-- TestNGhah.TestUserInsert -->
+      <class name="TestNGhah.TestUserDelete">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="testInsert" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- TestNGhah.TestUserDelete -->
+      <class name="TestNGhah.TestStaffDelete">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="testInsert" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- TestNGhah.TestStaffDelete -->
+      <class name="TestNGhah.TestDepartDelete">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="testInsert" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TestNGhah.TestDepartDelete -->
+    </classes>
+  </test> <!-- TestNGhah suite(failed) -->
+</suite> <!-- Failed suite [ASM_PS09502_Java5] -->

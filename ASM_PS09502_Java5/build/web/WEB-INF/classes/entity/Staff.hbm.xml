@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 3, 2020 10:50:16 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Staff" table="Staff" schema="dbo" catalog="PS09502_NguyenQuocVu_Java5" optimistic-lock="version">
+        <id name="staffid" type="int">
+            <column name="staffid" />
+            <generator class="native" />
+        </id>
+        <many-to-one name="depart" class="entity.Depart" fetch="select">
+            <column name="departid" length="20" />
+        </many-to-one>
+        <property name="name" type="string">
+            <column name="name" />
+        </property>
+        <property name="gender" type="java.lang.Boolean">
+            <column name="gender" />
+        </property>
+        <property name="birthday" type="date">
+            <column name="birthday" length="10" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="50" />
+        </property>
+        <property name="salary" type="java.lang.Double">
+            <column name="salary" precision="53" scale="0" />
+        </property>
+        <property name="photo" type="string">
+            <column name="photo" />
+        </property>
+        <property name="notes" type="string">
+            <column name="notes" />
+        </property>
+        <property name="deleted" type="java.lang.Boolean">
+            <column name="deleted" />
+        </property>
+        <set name="records" table="Record" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="staffid" />
+            </key>
+            <one-to-many class="entity.Record" />
+        </set>
+    </class>
+</hibernate-mapping>
